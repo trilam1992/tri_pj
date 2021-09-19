@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+         <meta charset="utf-8" />
+		<title>ProcessFormData</title>
+        <meta name="description" content="Process Form created by Tri Van Lam-s3342031" />
+        <meta name="keywords" content="Tri Van Lam, s3342031, INTE2047, E-Business Systems 1, Form Process" />
+        <link rel="stylesheet" type="text/css" href="layoutstyles.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+         
+        
+ 	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+          
+            <?php include("header.php");?>
+        <nav>
+            
+            <a href="index.html"><div class="menu">Home</div></a>
+            <a href="aboutme.html"><div class ="menu">About Me</div></a>
+            <a href="timetable.html"><div class ="menu">Timetable</div></a>
+            <a href="http://raws.adc.rmit.edu.au/~s3342031/blog2/" tarPOST="_blank"><div class="menu">Weekly Blog</div></a>
+          
+        </nav>
+            </div>
+        
+        
+            <div id="leftmenu">
+                <h1>Discover</h1>
+                <?php include("menu.php");?>
+           </div>
+
+            <div id="content">
+                <h1>Process Form Data</h1>
+                	<?php
+               			$givenName=$_POST["given"];
+						$familyName=$_POST["family"];
+						$studentload=$_POST["load"];
+                        $score = $_POST["html-quiz"];
+						$cssScore = $_POST["css-quiz"];
+						$comment = $_POST['comment'];
+						echo "Name: "  .  $givenName .  " "  .  $familyName . "<br />";
+						echo "Load: "  .  $studentload   .  " studies "   .  "<br /><br/>";
+                        
+                        if ($score ==1) //First Score Option of 18 to 20
+                        {
+                            echo "Excellent HTML Quiz score " . $givenName . "<br />";
+                            echo "You are doing very well indeed <br /><br/>";
+                        }else if ($score==2){
+                        	
+                        	echo "Your HTML Quiz score is good " . $givenName . "<br/>";
+                        	echo "But you need to try a little bit more! <br/><br/>";
+                        }else if ($score ==3){
+                        	
+                        	echo "Yor HTML Quiz score is bad " . $givenName . "<br/>";
+                        	echo "You need to try harder! <br/><br/>";
+                        }
+                        
+                        if ($cssScore ==1) //First Score Option of 18 to 20
+                        {
+                            echo "Excellent CSS Quiz score " . $givenName . "<br />";
+                            echo "You are doing very well indeed <br /><br/>";
+                        }else if ($cssScore==2){
+                        	
+                        	echo "Your CSS Quiz score is good " . $givenName . "<br/>";
+                        	echo "But you need to try a little bit more! <br/><br/>";
+                        }else if ($cssScore ==3){
+                        	
+                        	echo "Yor CSS Quiz score is bad " . $givenName . "<br/>";
+                        	echo "You need to try harder! <br/><br/>";
+                        }
+                        echo $comment;
+               		?>
+             
+             	<br/>
+             	<hr/>
+             	<a href="quizform.html">Back to Quiz Form</a>
+            </div>
+            <div id="footer">
+                 <p>This website is a student project that is intended to be used only for academic purposes. This page was created by Tri Van Lam-s3342031</p>
+            </div>
+        </div>
+	</body>
+</html>

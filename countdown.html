@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+         <meta charset="utf-8" />
+		<title>Countdown</title>
+        <meta name="description" content="Countdown and Browser detection created by Tri Van Lam-s3342031" />
+        <meta name="keywords" content="Tri Van Lam, s3342031, INTE2047, E-Business Systems 1, countdown til the end of semester, challenge 4, 5" />
+        <link rel="stylesheet" type="text/css" href="layoutstyles.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+         
+        <script type="text/javascript" src="js/challenge4&5.js">
+            
+        </script>
+ 	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+          
+            <?php include("header.php");?>
+        <nav>
+            
+            <a href="index.html"><div class="menu">Home</div></a>
+            <a href="aboutme.html"><div class ="menu">About Me</div></a>
+            <a href="timetable.html"><div class ="menu">Timetable</div></a>
+            <a href="http://raws.adc.rmit.edu.au/~s3342031/blog2/" target="_blank"><div class="menu">Weekly Blog</div></a>
+          
+        </nav>
+            </div>
+        
+        
+            <div id="leftmenu">
+                <h1>Discover</h1>
+                <?php include("menu.php");?>
+           </div>
+
+            <div id="content">
+                <h1>Tutorial Challenge week 6</h1>
+                <h2>Countdown function</h2>
+                <br />
+                <script type="text/javascript">countDown();</script>
+                <p>Days Remaining</p>
+                <div id="daysBox"></div>
+                <p>Hours Remaining</p>
+                <div id="hoursBox"></div>
+                <p>Minutes Remaining</p>
+                <div id="minsBox"></div>
+                <p>Seconds Remaining</p>
+                <div id="secsBox"></div>
+               
+                <br />
+                <h2>Browser Information Detection</h2>
+                <input type="button" onclick="browserDetect()" value="Users' Browsers Detection" />
+                <p><i>refers to <a href="http://www.quirksmode.org/js/detect.html">http://www.quirksmode.org/js/detect.html</a></i></p>
+            </div>
+            <div id="footer">
+                 <p>This website is a student project that is intended to be used only for academic purposes. This page was created by Tri Van Lam-s3342031</p>
+            </div>
+        </div>
+	</body>
+</html>

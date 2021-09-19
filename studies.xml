@@ -1,0 +1,43 @@
+<uni>
+<studies>
+	<course>
+		<title>E-Business Systems</title>
+		<code>INTE2047</code>
+		<lectureday>Tuesday</lectureday>
+		<labday>Tuesday</labday>
+		<semester>1</semester>
+		<year>2013</year>
+		<description>This course aims to provide an understanding of e-business and its associated technologies. 
+    The basics of online commerce will be introduced along with the elements that are particular to an electronic marketplace. 
+    The course covers both client-side and server-side issues as well as the associated tools and languages such as HTML, JavaScript and PHP.  
+    Learning activities concentrate on the use of these tools for the purposes of finding viable e-commerce solutions. </description>
+		<graphic>images/ecommerce.jpg</graphic>
+	</course>
+    <course>
+        <title>Accounting in Organizations and Society</title>
+        <code>ACCT1046</code>
+        <lectureday>Tuesday</lectureday>
+        <labday>Tuesday</labday>
+        <semester>1</semester>
+        <year>2013</year>
+		<description>Accounting in Organisations and Society introduces you to the role of accounting information in business and also in society more broadly. 
+    In this course you will learn the basic principles underlying the production of financial information and its use in decision-making by various user groups including managers, 
+    shareholders, lenders, investment analysts, etc. 
+    The course depicts accounting as the language of business communication to explain its relevance to students of all business disciplines. 
+    Accounting in Organisations and Society is a compulsory core unit in the Bachelor of Business suite of degrees, and is also a pre-requisite for more advanced courses in accounting.</description>
+		<graphic>images/accounting.jpg</graphic>
+    </course>
+    <course>
+        <title>Commercial Law</title>
+        <code>LAW2442</code>
+        <lectureday>Wednesday</lectureday>
+        <labday>Wednesday</labday>
+        <semester>1</semester>
+        <year>2013</year>
+		<description>Successful completion of Commercial Law means that you should be able to: Analyse legal problems with an appreciation of the multiple issues impacting those problems. 
+    In addition, the course provides an opportunity for you to develop generic capabilities. These include the ability to: 
+    Solve problems and construct arguments,Tolerate ambiguity, Identify, understand, distinguish, interpret  and apply basic legal concepts.</description>
+		<graphic>images/law.jpg</graphic>
+    </course>
+</studies>
+</uni>

@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+         <meta charset="utf-8" />
+		<title>Shopping</title>
+        <meta name="description" content="Shopping created by Tri Van Lam-s3342031" />
+        <meta name="keywords" content="Tri Van Lam, s3342031, INTE2047, E-Business Systems 1, shopping cart" />
+        <link rel="stylesheet" type="text/css" href="layoutstyles.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script type="text/javascript" src="js/language-en.js"></script>
+        <script type="text/javascript" src="js/nopcart.js">
+
+            //==============================================================
+            // NOP Design JavaScript Shopping Cart 
+            //--------------------------------------------------------------// Visit NOP Design at http://www.nopdesign.com/freecart 
+            //==============================================================
+        </script>
+ 	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+          
+            <?php include("header.php");?>
+        <nav>
+            
+            <a href="index.html"><div class="menu">Home</div></a>
+            <a href="aboutme.html"><div class ="menu">About Me</div></a>
+            <a href="timetable.html"><div class ="menu">Timetable</div></a>
+            <a href="http://raws.adc.rmit.edu.au/~s3342031/blog2/" target="_blank"><div class="menu">Weekly Blog</div></a>
+          
+        </nav>
+            </div>
+        
+        
+            <div id="leftmenu">
+                <h1>Discover</h1>
+                <?php include("menu.php");?>
+           </div>
+
+            <div id="content">
+                <h1>Shopping</h1>
+                <form id="order" action = "">
+                	<div class="itemphoto">
+                    	<img src="images/iphone5.jpg" alt="iphone 5" title="iphone 5"/>
+                    </div>
+                	
+                	<div class="itemdescription">
+                	<b>Product 1:</b>
+                    <input type="text" size="2" maxlength="3" name = "QUANTITY" 
+                    onchange = 'this.value=CKquantity(this.value)' value="1" />
+                    Iphone 5 <br />
+                    <b>Price:</b> 19.95<br />
+                    <b>Product ID:</b> 001<br />
+                    <b>Shipping fee:</b> 5.95<br />      
+                    <input type="hidden" name="PRICE" value="19.95" />
+                    <input type="hidden" name="NAME" value="iPhone 5" />
+                    <input type="hidden" name="ID_NUM" value="ID 001" />
+                    <input type="hidden" name="SHIPPING" value="5.95" />
+                    <b>Select a color:</b>
+                    <select>
+                    <option value="Red">  Red</option>
+                    <option value="Blue"> Blue</option>
+                    <option value="White">White</option>
+                    </select><br />
+                    <b>Select a size:</b>
+                    <select>
+                    <option value="Small" >  Small</option>
+                    <option value="Medium" > Medium</option>
+                    <option value="Large" >Large</option>
+                    </select>
+                    <input type="button" value=' Add to Cart '
+                    onclick='AddToCart(this.form)'/>
+                    </div>
+                 </form>
+                <br />
+                
+                <!-- product 2 -->
+                <form id="order0" action = "managecart.html">
+                	<div class="itemphoto">
+                    	<img src="images/iphone4.jpg" alt="iphone 4" title="iphone 4"/>
+                    </div>
+                    
+                    <div class="itemdescription">
+                    <b>Product 2:</b>
+                    <input type="text" size="2" maxlength="3" name = "QUANTITY" 
+                    onchange = 'this.value=CKquantity(this.value)' value="1" />
+                    Iphone 4<br />
+                    <b>Price:</b> 25.95<br />
+                    <b>Product ID:</b> 002<br />
+                    <b>Shipping fee:</b> 5.95<br />      
+                    <input type="hidden" name="PRICE" value="25.95" />
+                    <input type="hidden" name="NAME" value="iPhone 4" />
+                    <input type="hidden" name="ID_NUM" value="ID 002" />
+                    <input type="hidden" name="SHIPPING" value="5.95" />
+                    <b>Select a color:</b>
+                    <select>
+                    <option value="Red">  Red</option>
+                    <option value="Blue"> Blue</option>
+                    <option value="White">White</option>
+                    </select><br />
+                    <b>Select a size:</b>
+                    <select>
+                    <option value="Small" >  Small</option>
+                    <option value="Medium" > Medium</option>
+                    <option value="Large" >Large</option>
+                    </select>
+                    <input type="button" value=' Add to Cart '
+                    onclick='AddToCart(this.form)'/>
+                    
+                    </div>
+                 </form>
+                 <!-- end product 2 -->
+                <br />
+
+                <!-- product 3 -->
+                <form id="Form1" action = "managecart.html">
+                	
+                	<div class="itemphoto">
+                    <img src="images/iphone3.jpg" alt="iphone 3" title="iphone 3"/>
+                    </div>
+                    
+					<div class="itemdescription">
+					<b>Product 3:</b>
+                    <input type="text" size="2" maxlength="3" name = "QUANTITY" 
+                    onchange = 'this.value=CKquantity(this.value)' value="1" />
+                    Iphone 3<br />
+                    <b>Price:</b> 10.95<br />
+                    <b>Product ID:</b> 003<br />
+                    <b>Shipping fee:</b> 5.95<br />      
+                    <input type="hidden" name="PRICE" value="10.95" />
+                    <input type="hidden" name="NAME" value="iPhone 3" />
+                    <input type="hidden" name="ID_NUM" value="ID 003" />
+                    <input type="hidden" name="SHIPPING" value="5.95" />
+                    <b>Select a color:</b>
+                    <select id="Select5" style="margin-top: 0px">
+                    <option value="Red">  Red</option>
+                    <option value="Blue"> Blue</option>
+                    <option value="White">White</option>
+                    </select><br />
+                    <b>Select a size:</b>
+                    <select id ="Select6">
+                    <option value="Small" >  Small</option>
+                    <option value="Medium" > Medium</option>
+                    <option value="Large" >Large</option>
+                    </select>
+                    <input type="button" value=' Add to Cart '
+                    onclick='AddToCart(this.form)'/>
+                    <br /><br />
+                    
+                    </div>
+                    
+                    <input type="submit" name="Checkout" value=" Check out now " />
+                 </form>
+                
+            </div>
+            <div id="footer">
+                 <p>This website is a student project that is intended to be used only for academic purposes. This page was created by Tri Van Lam-s3342031</p>
+            </div>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+         <meta charset="utf-8" />
+		<title>Visitor Greeting and Image Rotator</title>
+        <meta name="description" content="Visitor Greeting and Image Rotator created by Tri Van Lam-s3342031" />
+        <meta name="keywords" content="Tri Van Lam, s3342031, INTE2047, E-Business Systems 1, Greeting, Image, Rotator" />
+        <link rel="stylesheet" type="text/css" href="layoutstyles.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <script type="text/javascript" src="js/visitorGreeting.js"></script>
+        <script type="text/javascript" src="js/script/dw_event.js"></script>
+        <script type="text/javascript" src="js/script/dw_rotator.js"></script>
+        <script type="text/javascript" src="js/script/dw_rotator_aux.js"></script>
+        <script type="text/javascript" src="js/s3Slider.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+        <script type="text/javascript" src="js/s3SliderPacked.js"></script>
+        <script type="text/javascript">
+			var rotator1 = {
+			    path: 'images/slide/',
+			    id: 'r1',
+			    speed: 2000, // default is 4500
+			    bMouse: true, // pause/resume
+			    images: ["1.jpg", "2.jpg", "3.jpg"],
+			    actions: ["index.html", "rotate_linked.html", "just_rotate.html", "http://www.your_domain.com/your_page.html"]
+			}
+			
+			// Problems, errors? See http://www.dyn-web.com/tutorials/obj_lit.php#syntax
+			
+			function initRotator() {
+			    dw_Rotator.setup(rotator1);
+			}
+			
+			dw_Event.add( window, 'load', initRotator);
+		</script>
+        
+        <style type="text/css" media="screen">
+        	
+        	#slide{
+        		width:730px;
+        		height: 500px;
+        	}
+        	
+        	#r1{
+        		width:720px;
+        		height: 400px;
+        	}
+        </style>
+ 	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+          
+            <?php include("header.php");?>
+        <nav>
+            
+            <a href="index.html"><div class="menu">Home</div></a>
+            <a href="aboutme.html"><div class ="menu">About Me</div></a>
+            <a href="timetable.html"><div class ="menu">Timetable</div></a>
+            <a href="http://raws.adc.rmit.edu.au/~s3342031/blog2/" target="_blank"><div class="menu">Weekly Blog</div></a>
+          
+        </nav>
+            </div>
+        
+        
+            <div id="leftmenu">
+                <h1>Discover</h1>
+                <?php include("menu.php");?>
+           </div>
+
+            <div id="content">
+                <h1>Tutorial Challenge week 8</h1>
+                <h2>Vistor Greeting</h2>
+                <br/>
+                <script>
+                	if (Count()==1){
+					    document.write("This is your 1st visit to our page")
+					    When()
+					}
+					else if (Count()>1)
+					document.write("Welcome back. Your last visit was on <b>" + When() +"</B>.")
+				</script>
+				<br/>
+				<br/>
+				<input type="button" name="reload" onclick="location.reload(true)" value=" Refresh Page "/>
+				
+				<input type="button" name="removeCookie" onclick="DeleteAndRefresh()" value=" Delete Cookies and Refresh " />	
+                
+                
+                <p><i>refers to <a href="http://rainbow.arch.scriptmania.com/scripts/last_visited.html">
+                	http://rainbow.arch.scriptmania.com/scripts/last_visited.html</a></i></p>
+                <br/><br/>
+                <h2>Image Rotator</h2>
+                <div id="slide">
+                <a href="index.html"><img id="r1" src="images/slide/1.jpg" alt="" border="0"></a>
+                <br/>
+                <p><i>refers to <a href="http://www.dyn-web.com/code/rotate_images/">
+                	http://www.dyn-web.com/code/rotate_images/</a></i></p>
+				</div>
+            </div>
+            <div id="footer">
+                 <p>This website is a student project that is intended to be used only for academic purposes. This page was created by Tri Van Lam-s3342031</p>
+            </div>
+        </div>
+	</body>
+</html>

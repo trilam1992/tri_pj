@@ -1,0 +1,177 @@
+﻿/* Layout Styles - Lam Van Tri - s3342031 */
+#wrapper {
+background: rgb(238,238,238); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(238,238,238,1) 0%, rgba(204,204,204,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(238,238,238,1)), color-stop(100%,rgba(204,204,204,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(238,238,238,1) 0%,rgba(204,204,204,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#cccccc',GradientType=1 ); /* IE6-9 */
+
+    -webkit-box-shadow: 0px 0px 30px rgba(77, 39, 77, 1);
+-moz-box-shadow:    0px 0px 30px rgba(77, 39, 77, 1);
+box-shadow:         0px 0px 30px rgba(77, 39, 77, 1);
+    margin:auto;
+    height:auto;
+    min-width:1200px;
+    width:1200px;
+    margin-top:20px;
+    margin-bottom:20px;
+    
+}
+
+#header {
+   
+    padding-bottom:15px;
+    margin:auto;
+    fit-position:top;    
+    width:1200px;
+background: rgb(207,231,250); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(207,231,250,1) 0%, rgba(99,147,193,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(207,231,250,1)), color-stop(100%,rgba(99,147,193,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 */
+
+}
+
+    #header p {
+        text-align:right;
+        position:absolute;
+        z-index:1;
+        width:1200px;
+        font-size:80px;
+        top:-25px;
+        opacity:0.2;
+        color:white;
+        font-weight:lighter;
+}
+
+#footer p {
+    font-size:16px;
+    color:black;
+    margin:auto;
+    text-align:center;
+    clear:both;
+    height:70px;
+background: rgb(207,231,250); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(207,231,250,1) 0%, rgba(99,147,193,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(207,231,250,1)), color-stop(100%,rgba(99,147,193,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(207,231,250,1) 0%,rgba(99,147,193,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=1 ); /* IE6-9 */
+
+    border-top:1px solid #dedada;
+}
+
+#leftmenu {
+   
+    width:240px;
+    float:left;
+    margin-top:30px;
+    padding-bottom:10px;
+}
+
+#leftmenu h1 {
+    margin-top:43px;
+}
+
+#leftmenu a {
+	font-family: 'Lucida Sans Unicode', 'Lucida Grande',sans-serif;
+    font-size: 17px;
+    font-weight:lighter;
+    color: #515151;
+    line-height: 30px;
+    margin-left:30px;
+}
+
+    #leftmenu a:hover {
+        
+        color: #ff2525;
+        
+    }
+
+    #leftmenu div.currentmenu {
+        color:rgb(255,129,125);
+    }
+
+#content {
+    margin-top:30px;
+    margin-left:240px;
+   
+    
+   padding:1em;
+   padding-bottom:100px;
+  background-attachment:fixed;
+background: rgb(242,245,246); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(242,245,246,1) 0%, rgba(227,234,237,1) 37%, rgba(200,215,220,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(242,245,246,1)), color-stop(37%,rgba(227,234,237,1)), color-stop(100%,rgba(200,215,220,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(242,245,246,1) 0%,rgba(227,234,237,1) 37%,rgba(200,215,220,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f5f6', endColorstr='#c8d7dc',GradientType=1 ); /* IE6-9 */
+
+}
+
+#contentdemo {
+   margin-top:30px;
+  
+   border-top:1px solid #dedada;
+  
+   padding:1em;
+  background-attachment:fixed;
+    background: #fefffb; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #fefffb 0%, #f3f6f0 29%, #e3e7e1 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#fefffb), color-stop(29%,#f3f6f0), color-stop(100%,#e3e7e1)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #fefffb 0%,#f3f6f0 29%,#e3e7e1 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #fefffb 0%,#f3f6f0 29%,#e3e7e1 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #fefffb 0%,#f3f6f0 29%,#e3e7e1 100%); /* IE10+ */
+background: linear-gradient(135deg,  #fefffb 0%,#f3f6f0 29%,#e3e7e1 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefffb', endColorstr='#e3e7e1',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+float:left;
+width:690px;
+height:500px;
+   
+
+}
+
+#rightmenu {
+    
+    border-top:1px solid #dedada;
+    width:237px;
+    float:left;
+   margin-top:30px;
+   
+}
+
+    #rightmenu h1 {
+        margin-top:43px;
+    }
+    #rightmenu h2 {
+        margin-left: 30px;
+    }
+
+.itemphoto {
+    width:300px;
+    float:left;
+}
+    .itemphoto img {
+        width:225px;
+        height:225px;
+    }
+.itemdescription{
+    
+    margin-left:400px;
+    padding-top:30px;
+    padding-bottom:100px;
+    padding:50px;
+}
+
+
+

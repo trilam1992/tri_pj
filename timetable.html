@@ -1,0 +1,229 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+         <meta charset="utf-8" />
+		<title>Timetable</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+        <link rel="stylesheet" type="text/css" href="layoutstyles.css" />
+        <style type="text/css">
+            h1.heading1 {
+                background-image:url(images/bullet.png);
+                color:yellowgreen;
+                font-family:Verdana;
+                font-size:2.5em;
+            }
+            h2.heading2 {
+                color:darkgreen;
+                font-size:1.85em;
+            }
+            
+            h3.heading3 {
+                background-color:red;
+                font-style:italic;
+            }
+            p.exception {
+                font-size:1em;
+            }
+
+            caption {
+                font-family:Arial;
+                font-weight:bold;
+            }
+            tr {
+              color:mediumvioletred;  
+            }
+        </style>
+	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+                <?php include("header.php");?>
+        <nav>
+            
+            <a href="index.html"><div class="menu">Home</div></a>
+            <a href="aboutme.html"><div class ="menu">About Me</div></a>
+            <a href="timetable.html"><div class ="menu currentMenu">Timetable</div></a>
+            <a href="http://raws.adc.rmit.edu.au/~s3342031/blog2/" target="_blank"><div class="menu">Weekly Blog</div></a>
+            
+        </nav>
+            </div>
+        
+        
+            <div id="leftmenu">
+                <h1>Discover</h1>
+                <?php include("menu.php");?>
+           </div>
+                <div id="content">
+                <h1 class="roundedLabel" >Tri Van Lam</h1>
+                <h2 align="center" class="heading2">s3342031</h2>
+                <table id="center" border="1">
+                    
+                    <caption>
+                        Semester Timetable
+                    </caption>
+                    <tr>
+                        <th>Time</th>
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Webnesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">12:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td rowspan="4" class="law">LAW2442 Lecture</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">13:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td rowspan="4" class="account">ACCT1046 Lecture</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">14:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">15:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">16:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td rowspan="2" class="account">ACCT1046 Tutorial</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">17:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td rowspan="6" class="ebusiness">INTE2047 Lecture & Tutorial</td>
+                        <td rowspan="2" class="law">LAW2442 Tutorial</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">18:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                        
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">19:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                    </tr>
+                    <tr>
+                        <td rowspan="2" class="time">20:00</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                        <td class="blankCell">&nbsp</td>
+                    </tr>
+                </table>
+                <h3 class="heading3">Contact Hours</h3>
+                <p class="exception">Currently, i study 3 courses this semester. For each semester, i spend nearly 1 hour for the tutorial and 2 hours for the lecture. Therefore, totall it added up 9 hours
+                    in my contact hours.
+                </p>
+                <h3 class="heading3">Enrolled Courses</h3>
+                <p class="exception">This semester, i am enrolled in the course of Accounting in Orgainizations and Society, Commercial Law and E-Business Systems 1. </p>
+                <hr />
+                <h2>Reference</h2>
+                <a href="documents/Lab 01 Supplement Website Analysis.pdf" target="_blank">Lab 01 Supplement Website Analysis</a>
+                <br /><br />
+                <a  href="http://rmit.edu.au/" target="_blank"><img src="images/rmit.png" height="80px" width="150px" title="http://rmit.edu.au/"/></a>
+                <a  href="http://www.w3schools.com/" target="_blank"><img src="images/w3school.png" height="80px" width="130px" title="http://www.w3schools.com/"/></a>
+                
+            </div>
+                <div id="footer">
+                <p>This website is a student project that is intended to be used only for academic purposes. This page was created by Tri Van Lam-s3342031</p>
+            </div>
+            </div>
+        
+        
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+         <meta charset="utf-8" />
+		<title>Calendar</title>
+        <meta name="description" content="Display Calendar created by Tri Van Lam-s3342031" />
+        <meta name="keywords" content="Tri Van Lam, s3342031, INTE2047, E-Business Systems 1, Calendar, Challenge 6" />
+        <link rel="stylesheet" type="text/css" href="layoutstyles.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+         
+        <style type="text/css">
+        	
+        	td.other_month {
+        		
+        		color:#B6B6B6;
+        	}
+        	
+        	td.today {
+        		background-color: #07C6E1;
+        		color:black;
+        	}
+        </style>
+        
+ 	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+          
+            <?php include("header.php");?>
+        <nav>
+            
+            <a href="index.html"><div class="menu">Home</div></a>
+            <a href="aboutme.html"><div class ="menu">About Me</div></a>
+            <a href="timetable.html"><div class ="menu">Timetable</div></a>
+            <a href="http://raws.adc.rmit.edu.au/~s3342031/blog2/" target="_blank"><div class="menu">Weekly Blog</div></a>
+          
+        </nav>
+            </div>
+        
+        
+            <div id="leftmenu">
+                <h1>Discover</h1>
+                <?php include("menu.php");?>
+           </div>
+
+            <div id="content">
+                
+                <h1>Tutorial Challenge week 7</h1>
+              
+                <h2>Calendar</h2>
+                <form method="post" action="calendarnext.html">
+                	<select name="month">
+                		<?php 
+                			for ($i=1;$i<=12;$i++){
+           					echo '<option value=' . $i . '>' . $i . '</option>';
+							
+					
+           				}
+                		?>
+                		
+                	</select>
+                	<input type="submit" value=" Go " name="go" />
+                </form>
+                
+                <?php include("calendarprocess.php");?>
+                
+                <br/>
+                <p><i>refers to <a href="http://tomsbigbox.com/generate-a-calendar-with-php/">http://tomsbigbox.com/generate-a-calendar-with-php/</a></i></p>
+                <p><i>refers to <a href="http://php.about.com/od/finishedphp1/ss/php_calendar_2.htm">http://php.about.com/od/finishedphp1/ss/php_calendar_2.htm</a></i></p>
+            </div>
+            <div id="footer">
+                 <p>This website is a student project that is intended to be used only for academic purposes. This page was created by Tri Van Lam-s3342031</p>
+            </div>
+        </div>
+	</body>
+</html>

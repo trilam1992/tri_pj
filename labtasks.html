@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+         <meta charset="utf-8" />
+		<title>Lab Tasks</title>
+        <meta name="description" content="Show tasks detail of each week lab created by Tri Van Lam-s3342031" />
+        <meta name="keywords" content="Tri Van Lam, s3342031, INTE2047, E-Business Systems 1, Lab tasks" />
+        <link rel="stylesheet" type="text/css" href="layoutstyles.css" />
+        <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+         
+        
+ 	     <style type="text/css">
+             .auto-style1 {
+                 table-layout:auto;
+                 text-align:center;
+                 border-collapse:collapse;
+                 
+             }
+ 	         table, th, td {
+ 	            border:1px solid red;
+              }
+             .auto-style2 {
+                 background-color: #000000;
+             }
+         </style>
+         
+        <script type="text/javascript">
+
+            function checkStatus() {
+                alert("This function will check the status of my lab work");
+
+                /*Get weeknumber and lab progress */
+                var weeknumber = prompt("What week of the semester is this?", "5");
+                var labnumber = prompt("What is your progress? \r That is, how many labs have you completed?", weeknumber);
+
+                if (labnumber == weeknumber) {
+                    alert("Fantastic work");
+                } else if (weeknumber - labnumber > 2) {
+                    alert("You still have some work to do");
+                } else if (weeknumber - labnumber == 1) {
+                    alert("You still have one more to do!");
+                } else if (weeknumber - labnumber == 2) {
+                    alert("You still have 2 more labs to finish!");
+                } else if (labnumber > weeknumber) {
+                    alert("You are super awesome!");
+                }
+
+            }
+        </script>
+        
+ 	</head>
+	<body>
+        <div id="wrapper">
+            <div id="header">
+          
+            <?php include("header.php");?>
+        <nav>
+            
+            <a href="index.html"><div class="menu">Home</div></a>
+            <a href="aboutme.html"><div class ="menu">About Me</div></a>
+            <a href="timetable.html"><div class ="menu">Timetable</div></a>
+            <a href="http://raws.adc.rmit.edu.au/~s3342031/blog2/" target="_blank"><div class="menu">Weekly Blog</div></a>
+          
+        </nav>
+            </div>
+        
+        
+            <div id="leftmenu">
+                <h1>Discover</h1>
+                <?php include("menu.php");?>
+           </div>
+
+            <div id="content">
+                <h1>Lab Exercises</h1>
+                <table class="auto-style1" id="center">
+                    <tr>
+                        <th>Week</th>
+                        <th>Lab Exercises</th>
+                        <th>Topics</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td><a href="documents/worksheet1.pdf" target="_blank">Worksheet 1</a></td>
+                        <td>HTML</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td><a href="documents/worksheet2.pdf" target="_blank">Worksheet 2</a></td>
+                        <td>HTML Tables | Styles | Blogs</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td><a href="documents/worksheet3.pdf"target="_blank">Worksheet 3</a></td>
+                        <td>Styles | Cascading Style Sheets (CSS)</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td><a href="documents/worksheet4.pdf" target="_blank">Worksheet 4</a></td>
+                        <td>Publishing templates | PHP navigation</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td><a href="documents/worksheet5.pdf">Worksheet 5</a></td>
+                        <td>Valid HTML | Home page | Editor Tables</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td><a href="documents/worksheet6.pdf">Worksheet 6</a></td>
+                        <td>JavaScript</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td><a href="documents/worksheet7.pdf">Worksheet 7</a></td>
+                        <td>PHP &amp; HTML Forms</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td><a href="documents/worksheet8.pdf">Worksheet 8</a></td>
+                        <td>A Shopping Cart</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td class="auto-style2">No Tutorial</td>
+                        <td class="auto-style2">No Tutorial</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td><a href="documents/worksheet10.pdf">Worksheet 10</a></td>
+                        <td>XML &amp; Databinding | Form Validation</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table>
+                
+                <input type="button" value="Lab Progress" id="btnCheck" onclick="checkStatus()"/>
+
+            </div>
+            <div id="footer">
+                 <p>This website is a student project that is intended to be used only for academic purposes. This page was created by Tri Van Lam-s3342031</p>
+            </div>
+        </div>
+	</body>
+</html>
